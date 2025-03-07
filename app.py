@@ -7,22 +7,8 @@ st.title('PromptLab')
 # Create two columns for the Shinobi and Raikage buttons
 col1, col2 = st.columns(2)
 
-# Style the buttons to look like rounded slots
-with col1:
-    shinobi_selected = st.button("🌀 Shinobi")
-
-with col2:
-    raikage_selected = st.button("⚡ Raikage")
-
 mode = st.radio("Choose a mode:", ["Shinobi", "Raikage"])
 st.write(f"You selected: {mode}")
-
-tab1, tab2 = st.tabs(["Shinobi", "Raikage"])
-with tab1:
-    st.write("Shinobi Mode")
-with tab2:
-    st.write("Raikage Mode")
-
 
 # Retrieve the API key from Streamlit secrets
 GOOGLE_API_KEY = st.secrets["GEMINI_API_KEY"]
