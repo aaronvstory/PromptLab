@@ -11,4 +11,4 @@ GOOGLE_API_KEY = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Input field for the blog topic
-topic = st.text_area('Enter your promt:', placeholder='E.g., The Future of Artificial Intelligence')
+topic = st.text_area('Enter your prompt: ') #placeholder='E.g., The Future of Artificial Intelligence'
