@@ -14,6 +14,9 @@ with col1:
 with col2:
     raikage_selected = st.button("⚡ Raikage")
 
+mode = st.radio("Choose a mode:", ["Shinobi", "Raikage"])
+st.write(f"You selected: {mode}")
+
 # Retrieve the API key from Streamlit secrets
 GOOGLE_API_KEY = st.secrets["GEMINI_API_KEY"]
 
