@@ -67,7 +67,7 @@ if st.button("🚀 Enhance Prompt"):
             
             # ✅ Call Gemini API to Enhance the Prompt
             try:
-                model = genai.GenerativeModel('gemini-pro')
+                model = genai.GenerativeModel('gemini-2.0-flash')
                 response = model.generate_content(full_prompt)
                 
                 # ✅ Display Enhanced Prompt
