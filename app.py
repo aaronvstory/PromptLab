@@ -68,7 +68,7 @@ if st.button("Generate Enhanced Prompt"):
                 prompt = RAIKAGE_TEMPLATE.format(user_prompt=topic)
 
             # Initialize the generative model
-            model = genai.GenerativeModel('gemini-pro')
+            model = genai.GenerativeModel('gemini-2.0-flash')
 
             # Generate enhanced prompt
             try:
