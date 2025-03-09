@@ -21,14 +21,7 @@ user_prompt = st.text_area('Enter your prompt:')
 # Function to Generate Enhanced Prompt
 def get_gemini_response(prompt):
     try:
-        response = gemini_model.generate_content(
-            prompt,
-            generation_config=genai.types.GenerationConfig(
-                temperature=0.7,
-                max_output_tokens=500,
-                candidate_count=1
-            )
-        )
+        response = gemini_model.generate_content(prompt)
         return response.text if response else "Error: No response received."
     except Exception as e:
         return f"❌ Gemini error: {e}"
