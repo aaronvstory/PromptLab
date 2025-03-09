@@ -22,7 +22,7 @@ def generate_enhanced_prompt(user_prompt, mode):
         system_prompt = "You are a world-class AI strategist specializing in execution-focused prompts. Transform the following prompt for high-impact, expert-level results."
     
     # Generate response using Gemini API
-    response = genai.generate_text(system_prompt + "\n\n" + user_prompt)
+    response = genai.generate_content(system_prompt + "\n\n" + user_prompt)
     return response
 
 # Process User Input
