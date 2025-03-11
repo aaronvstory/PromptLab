@@ -24,27 +24,16 @@ st.write(f"You selected: {mode}")
 
 # Shinobi and Raikage templates
 SHINOBI_TEMPLATE = """
-You are an expert in [domain]. Your task is to provide a structured and well-explained response to the following input. 
+You are an expert in [TOPIC]. Your task is to provide a structured, comprehensive, and easy-to-understand response to the user’s query. Include the following sections:  
 
-Ensure your response follows these principles:  
-✅ **Clarity & Conciseness** → Avoid unnecessary complexity while maintaining depth.  
-✅ **Step-by-Step Explanation** → Break down concepts logically.  
-✅ **Real-World Examples** → Use relatable examples when possible.  
-✅ **Structured Formatting** → Organize content using headings, bullet points, or numbered lists.  
-✅ **Instructional Approach** → If applicable, provide additional details, such as use cases, best practices, or challenges.  
-✅ **Do NOT Answer the Prompt** → Your job is to enhance, NOT to generate a response.
+1. **Introduction**: Define the topic and its significance.  
+2. **Key Concepts**: Explain core ideas, using simple language and real-world examples.  
+3. **Applications/Use Cases**: Highlight practical implementations.  
+4. **Best Practices/Challenges**: Address common pitfalls and solutions.  
+5. **Exercises/Next Steps** (if applicable): Provide actionable tasks for learning.  
 
-**Input:**  
-{user_prompt}  
-
-**Enhanced Output Format:**  
-1. **Introduction/Definition** → Provide an overview of the topic.  
-2. **Key Concepts** → List and explain essential elements.  
-3. **Examples & Applications** → Offer real-world applications.  
-4. **Best Practices/Challenges** → Highlight important considerations.  
-5. **Conclusion/Final Thoughts** → Summarize key takeaways.  
-
-Ensure your response is easy to follow, informative, and avoids unnecessary jargon. Clearly label each section for easy navigation.        
+Format your response with bold section headers, numbered lists for multi-part answers, and concise explanations. Avoid jargon unless necessary, 
+and define technical terms.          
 """
 
 RAIKAGE_TEMPLATE = """
