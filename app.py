@@ -24,39 +24,50 @@ st.write(f"You selected: {mode}")
 
 # Shinobi and Raikage templates
 SHINOBI_TEMPLATE = """
-You are an advanced prompt enhancer, specializing in creating structured, high-clarity prompts that optimize LLM performance.  
-Your task is to refine a given prompt using the **Shinobi framework**, ensuring the following principles:
+You are an advanced prompt enhancer designed to refine and expand prompts for clarity, structure, and engagement.  
+Your task is to take a given prompt and improve it using the **Enhanced Primer framework**, ensuring the following:  
 
-✅ **Concise & High-Density Prompting** → Remove fluff, keeping instructions clear and actionable (~250 words max).  
-✅ **Explicit Role Definition** → Assign a role to the AI for better contextual grounding.  
-✅ **Step-by-Step Clarity** → Break the task into structured sections, avoiding ambiguity.  
-✅ **Defined Output Format** → Specify the response format (JSON, CSV, list, structured text, etc.).  
-✅ **Zero Conflicting Instructions** → Ensure clarity in constraints (e.g., avoid “simple yet comprehensive”).  
-✅ **Optional: One-Shot Example** → Add a single example where relevant to guide the AI.  
+✅ **Assign a Role** → Clearly define the user's role to set context.  
+✅ **Define a Clear Objective** → Clarify the task and expected outcome.  
+✅ **Break Down Content** → Structure the response into key sections with subtopics.  
+✅ **Enhance Style & Clarity** → Ensure the response is actionable, practical, and easy to follow.  
+✅ **Adapt to Audience Level** → Adjust depth and complexity for different users.  
+✅ **Suggest Examples (If Needed)** → Add relevant real-world examples for better understanding.  
+✅ **Control Output Format** → Ensure the response aligns with the expected format (list, guide, paragraph, etc.).  
 
-### **Enhance the following prompt using Shinobi principles:**  
+**Enhance the following prompt using this structured approach:**  
+
 **Original Prompt:**  
 {user_prompt}  
 
-**Enhanced Shinobi Prompt:**  
+**Enhanced Prompt:**  
+(Apply the Enhanced Primer framework to generate the improved version)      
 """
 
 RAIKAGE_TEMPLATE = """
-You are an elite AI strategist, specializing in designing execution-focused prompts that maximize LLM efficiency.  
-Your task is to refine a given prompt using the **Raikage framework**, ensuring the following principles:  
+You are an elite-level [role] with deep expertise in [subject].  
+Your task is to develop a structured, high-quality response following these key elements:  
 
-✅ **Precision & Depth** → Ensure expert-level guidance, reducing vagueness and ambiguity.  
-✅ **Context & Execution Approach** → Include a structured methodology to solve the problem.  
-✅ **Defined Output Format** → Specify exact structure (JSON, formatted text, markdown, tables, or code blocks).  
-✅ **Edge Case Handling & Constraints** → Account for potential failures and model limitations.  
-✅ **Optional: Few-Shot Prompting** → If beneficial, provide 1-2 high-quality examples for refinement.  
-✅ **Complies with External Factors** → Adhere to best practices (e.g., ethical scraping, security policies).  
+## **Context**  
+[Provide background information related to the task to frame the problem.]  
 
-### **Enhance the following prompt using Raikage principles:**  
+## **Approach**  
+[Define a **step-by-step** breakdown of how to achieve the goal, focusing on methodology and best practices.]  
+
+## **Response Format**  
+[Specify the expected output structure, ensuring clarity and completeness.]  
+
+## **Instructions**  
+- [Ensure high-quality standards, best practices, and possible constraints.]  
+- [Emphasize documentation, flexibility, and potential edge cases.]  
+
+Enhance the following prompt using this **structured, expert-level framework:**  
+
 **Original Prompt:**  
 {user_prompt}  
 
-**Enhanced Raikage Prompt:**  
+**Enhanced Prompt:**  
+(Apply the Mastermind framework to generate the improved version)    
 """
 if st.button("Generate Enhanced Prompt"):
     if topic.strip():
