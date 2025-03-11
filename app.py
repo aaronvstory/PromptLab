@@ -75,7 +75,7 @@ if st.button("Generate Enhanced Prompt"):
                 response = model.generate_content(prompt)
                 enhanced_prompt = response.text  # Extract the response text
                 st.subheader("🔹 Enhanced Prompt:")
-                st.subheader(enhanced_prompt, language="markdown")
+                st.code(enhanced_prompt, language="markdown")
             except Exception as e:
                 st.error(f"❌ Error generating enhanced prompt: {e}")
     else:
