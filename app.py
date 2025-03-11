@@ -32,6 +32,7 @@ Ensure your response follows these principles:
 ✅ **Real-World Examples** → Use relatable examples when possible.  
 ✅ **Structured Formatting** → Organize content using headings, bullet points, or numbered lists.  
 ✅ **Instructional Approach** → If applicable, provide additional details, such as use cases, best practices, or challenges.  
+✅ **Do NOT Answer the Prompt** → Your job is to enhance, NOT to generate a response.
 
 **Input:**  
 {user_prompt}  
