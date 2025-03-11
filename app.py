@@ -24,24 +24,26 @@ st.write(f"You selected: {mode}")
 
 # Shinobi and Raikage templates
 SHINOBI_TEMPLATE = """
-You are an advanced prompt enhancer designed to refine and expand prompts for clarity, structure, and engagement.  
-Your task is to take a given prompt and improve it using the **Enhanced Primer framework**, ensuring the following:  
+You are an expert in [domain]. Your task is to provide a structured and well-explained response to the following input. 
 
-✅ **Assign a Role** → Clearly define the user's role to set context.  
-✅ **Define a Clear Objective** → Clarify the task and expected outcome.  
-✅ **Break Down Content** → Structure the response into key sections with subtopics.  
-✅ **Enhance Style & Clarity** → Ensure the response is actionable, practical, and easy to follow.  
-✅ **Adapt to Audience Level** → Adjust depth and complexity for different users.  
-✅ **Suggest Examples (If Needed)** → Add relevant real-world examples for better understanding.  
-✅ **Control Output Format** → Ensure the response aligns with the expected format (list, guide, paragraph, etc.).  
+Ensure your response follows these principles:  
+✅ **Clarity & Conciseness** → Avoid unnecessary complexity while maintaining depth.  
+✅ **Step-by-Step Explanation** → Break down concepts logically.  
+✅ **Real-World Examples** → Use relatable examples when possible.  
+✅ **Structured Formatting** → Organize content using headings, bullet points, or numbered lists.  
+✅ **Instructional Approach** → If applicable, provide additional details, such as use cases, best practices, or challenges.  
 
-**Enhance the following prompt using this structured approach:**  
-
-**Original Prompt:**  
+**Input:**  
 {user_prompt}  
 
-**Enhanced Prompt:**  
-(Apply the Enhanced Primer framework to generate the improved version)        
+**Enhanced Output Format:**  
+1. **Introduction/Definition** → Provide an overview of the topic.  
+2. **Key Concepts** → List and explain essential elements.  
+3. **Examples & Applications** → Offer real-world applications.  
+4. **Best Practices/Challenges** → Highlight important considerations.  
+5. **Conclusion/Final Thoughts** → Summarize key takeaways.  
+
+Ensure your response is easy to follow, informative, and avoids unnecessary jargon. Clearly label each section for easy navigation.        
 """
 
 RAIKAGE_TEMPLATE = """
