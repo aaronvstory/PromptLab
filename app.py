@@ -41,7 +41,7 @@ Your task is to take a given prompt and improve it using the **Enhanced Primer f
 {user_prompt}  
 
 **Enhanced Prompt:**  
-(Apply the Enhanced Primer framework to generate the improved version)      
+(Apply the Enhanced Primer framework to generate the improved version)        
 """
 
 RAIKAGE_TEMPLATE = """
