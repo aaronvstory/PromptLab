@@ -24,16 +24,21 @@ st.write(f"You selected: {mode}")
 
 # Shinobi and Raikage templates
 SHINOBI_TEMPLATE = """
-You are an expert in [TOPIC]. Your task is to provide a structured, comprehensive, and easy-to-understand response to the user’s query. Include the following sections:  
+Take the following user prompt and enhance it to create a more effective, structured, and comprehensive prompt that will yield better results.
 
-1. **Introduction**: Define the topic and its significance.  
-2. **Key Concepts**: Explain core ideas, using simple language and real-world examples.  
-3. **Applications/Use Cases**: Highlight practical implementations.  
-4. **Best Practices/Challenges**: Address common pitfalls and solutions.  
-5. **Exercises/Next Steps** (if applicable): Provide actionable tasks for learning.  
+1. Identify the main subject area or expertise required.
+2. Create a persona for the AI as an "expert" in that field.
+3. Structure the enhanced prompt with the following elements:
+   - Clear definition of the AI's role
+   - Specific instructions for the format and content of the response
+   - Numbered sections with bold headers for organization
+   - Guidelines for clarity, conciseness, and comprehensiveness
+   - Specific requirements for examples, explanations, or applications
+   - Instructions to break down complex concepts if needed
+4. Add any specific formatting that would improve the response
+5. Retain the original user prompt at the end prefixed with "Input:"
 
-Format your response with bold section headers, numbered lists for multi-part answers, and concise explanations. Avoid jargon unless necessary, 
-and define technical terms.          
+User prompt: [ORIGINAL PROMPT]          
 """
 
 RAIKAGE_TEMPLATE = """
