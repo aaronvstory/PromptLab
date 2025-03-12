@@ -26,7 +26,7 @@ st.write(f"You selected: {mode}")
 ##Analyze the following user prompt and transform it into an enhanced, structured prompt following these steps:
 # Shinobi and Raikage templates
 SHINOBI_TEMPLATE = """
-Your task is to develop a structured, high-quality response following these key elements:
+Your task is to Analyze the following user prompt and transform it into an enhanced, structured prompt following these key elements:
 
 1. Determine the primary subject area and required expertise level
 2. Formulate an expert persona introduction ("You are an expert in [subject]")
