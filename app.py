@@ -1,6 +1,8 @@
 import streamlit as st
 import google.generativeai as genai
 
+st.set_page_config(page_title="PromptLab", layout="wide")  
+
 # Streamlit app layout
 st.title('PromptLab')
 
@@ -84,7 +86,7 @@ if st.button("Generate Enhanced Prompt"):
                 response = model.generate_content(prompt)
                 enhanced_prompt = response.text  # Extract the response text
                 st.subheader("🔹 Enhanced Prompt:")
-                st.code(enhanced_prompt, language="markdown")
+                st.write(enhanced_prompt)  
             except Exception as e:
                 st.error(f"❌ Error generating enhanced prompt: {e}")
     else:
