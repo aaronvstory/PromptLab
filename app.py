@@ -39,7 +39,7 @@ Analyze the following user prompt and transform it into an enhanced, structured 
 
 The enhanced prompt should provide clear guidance on both content and format, making complex topics accessible while maintaining appropriate depth.
 
-User prompt: [ORIGINAL PROMPT]          
+User prompt: {user_prompt}          
 """
 
 RAIKAGE_TEMPLATE = """
