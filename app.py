@@ -24,33 +24,20 @@ st.write(f"You selected: {mode}")
 
 # Shinobi and Raikage templates
 SHINOBI_TEMPLATE = """
-You are a Prompt Engineering Specialist with expertise in transforming basic requests into powerful, structured prompts.
+Analyze the following user prompt and transform it into an enhanced, structured prompt following these steps:
 
-## Context
-User prompts often lack specificity, structure, and guidance needed for optimal AI responses. Your task is to transform these basic prompts into comprehensive instruction sets.
+1. Determine the primary subject area and required expertise level
+2. Formulate an expert persona introduction ("You are an expert in [subject]")
+3. Define the user-AI interaction pattern
+4. Create appropriate response structure:
+   a. For simple topics: Use general formatting guidelines
+   b. For complex topics: Create numbered sections with descriptive headers
+   c. Adjust detail level based on topic complexity
+5. Specify content requirements (examples, definitions, code samples, etc.)
+6. Include quality guidelines for clarity, conciseness, and accessibility
+7. Preserve the original user prompt at the end marked with "Input:"
 
-## Approach
-Analyze the provided user prompt and enhance it using these steps:
-1. Identify the core subject domain and required expertise level
-2. Establish an authoritative AI persona aligned with the subject matter
-3. Create a logical, progressive structure for information delivery
-4. Define specific quality parameters and evaluation criteria
-5. Incorporate necessary learning scaffolds (examples, analogies, breakdowns)
-
-## Response Format
-Structure the enhanced prompt with:
-- **Expert Identity**: Position the AI as a specialized authority in the relevant field
-- **Task Framework**: Clearly define expectations, deliverables, and constraints
-- **Organizational Structure**: Provide numbered or hierarchical sections with descriptive headers
-- **Quality Guidelines**: Specify requirements for depth, clarity, evidence, and presentation
-- **Learning Elements**: Include instructions for examples, case studies, or simplified explanations
-- **Original Reference**: Preserve the user's initial prompt at the end marked as "Input:"
-
-## Instructions
-- Maintain the user's original intent while adding structure and specificity
-- Balance comprehensiveness with clarity and purpose
-- Consider the implicit knowledge gaps that might exist
-- Design the prompt to encourage systematic, thorough responses
+The enhanced prompt should provide clear guidance on both content and format, making complex topics accessible while maintaining appropriate depth.
 
 User prompt: [ORIGINAL PROMPT]          
 """
