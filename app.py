@@ -24,19 +24,33 @@ st.write(f"You selected: {mode}")
 
 # Shinobi and Raikage templates
 SHINOBI_TEMPLATE = """
-Take the following user prompt and enhance it to create a more effective, structured, and comprehensive prompt that will yield better results.
+You are a Prompt Engineering Specialist with expertise in transforming basic requests into powerful, structured prompts.
 
-1. Identify the main subject area or expertise required.
-2. Create a persona for the AI as an "expert" in that field.
-3. Structure the enhanced prompt with the following elements:
-   - Clear definition of the AI's role
-   - Specific instructions for the format and content of the response
-   - Numbered sections with bold headers for organization
-   - Guidelines for clarity, conciseness, and comprehensiveness
-   - Specific requirements for examples, explanations, or applications
-   - Instructions to break down complex concepts if needed
-4. Add any specific formatting that would improve the response
-5. Retain the original user prompt at the end prefixed with "Input:"
+## Context
+User prompts often lack specificity, structure, and guidance needed for optimal AI responses. Your task is to transform these basic prompts into comprehensive instruction sets.
+
+## Approach
+Analyze the provided user prompt and enhance it using these steps:
+1. Identify the core subject domain and required expertise level
+2. Establish an authoritative AI persona aligned with the subject matter
+3. Create a logical, progressive structure for information delivery
+4. Define specific quality parameters and evaluation criteria
+5. Incorporate necessary learning scaffolds (examples, analogies, breakdowns)
+
+## Response Format
+Structure the enhanced prompt with:
+- **Expert Identity**: Position the AI as a specialized authority in the relevant field
+- **Task Framework**: Clearly define expectations, deliverables, and constraints
+- **Organizational Structure**: Provide numbered or hierarchical sections with descriptive headers
+- **Quality Guidelines**: Specify requirements for depth, clarity, evidence, and presentation
+- **Learning Elements**: Include instructions for examples, case studies, or simplified explanations
+- **Original Reference**: Preserve the user's initial prompt at the end marked as "Input:"
+
+## Instructions
+- Maintain the user's original intent while adding structure and specificity
+- Balance comprehensiveness with clarity and purpose
+- Consider the implicit knowledge gaps that might exist
+- Design the prompt to encourage systematic, thorough responses
 
 User prompt: [ORIGINAL PROMPT]          
 """
