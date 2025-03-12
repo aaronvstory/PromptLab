@@ -39,9 +39,14 @@ Analyze the following user prompt and transform it into an enhanced, structured 
 6. Include quality guidelines for clarity, conciseness, and accessibility
 7. Preserve the original user prompt at the end marked with "Input:"
 
-The enhanced prompt should provide clear guidance on both content and format, making complex topics accessible while maintaining appropriate depth.
+The enhanced prompt should provide clear guidance on both content and format, making complex topics accessible while maintaining appropriate depth.          
 
-User prompt: {user_prompt}          
+**Original Prompt:**  
+{user_prompt}  
+
+**Enhanced Prompt:**  
+(Apply the Primer framework to generate the improved version)
+
 """
 
 RAIKAGE_TEMPLATE = """
