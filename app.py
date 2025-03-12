@@ -23,10 +23,10 @@ topic = st.text_area('Enter your prompt:')
 # Display selected mode
 st.write(f"You selected: {mode}")
 
-##Analyze the following user prompt and transform it into an enhanced, structured prompt following these steps:
+
 # Shinobi and Raikage templates
 SHINOBI_TEMPLATE = """
-Your task is to Analyze the following user prompt and transform it into an enhanced, structured prompt following these key elements:
+Analyze the following user prompt and transform it into an enhanced, structured prompt following these steps:
 
 1. Determine the primary subject area and required expertise level
 2. Formulate an expert persona introduction ("You are an expert in [subject]")
