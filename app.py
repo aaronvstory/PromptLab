@@ -9,7 +9,7 @@ st.title('PromptLab')
 # Create two columns for the Shinobi and Raikage buttons
 col1, col2 = st.columns(2)
 
-mode = st.radio("Choose a mode:", ["Shinobi", "Raikage"], horizontal=True)
+mode = st.radio("Choose a mode:", ["Proficient Level", "Apex Level"], horizontal=True)
 
 # Retrieve the API key from Streamlit secrets
 GOOGLE_API_KEY = st.secrets["GEMINI_API_KEY"]
@@ -25,7 +25,7 @@ st.write(f"You selected: {mode}")
 
 
 # Shinobi and Raikage templates
-SHINOBI_TEMPLATE = """
+Proficient_TEMPLATE = """
 Analyze the following user prompt and transform it into an enhanced, structured prompt following these steps:
 
 1. Determine the primary subject area and required expertise level
@@ -49,7 +49,7 @@ The enhanced prompt should provide clear guidance on both content and format, ma
 
 """
 
-RAIKAGE_TEMPLATE = """
+Apex_TEMPLATE = """
 You are an elite-level [role] with deep expertise in [subject].  
 Your task is to develop a structured, high-quality response following these key elements:  
 
@@ -79,9 +79,9 @@ if st.button("Generate Enhanced Prompt"):
         with st.spinner("Enhancing your prompt..."):
             # Choose the template based on the selected mode
             if mode == "Shinobi":
-                prompt = SHINOBI_TEMPLATE.format(user_prompt=topic)
+                prompt = Proficient_TEMPLATE.format(user_prompt=topic)
             else:
-                prompt = RAIKAGE_TEMPLATE.format(user_prompt=topic)
+                prompt = Apex_TEMPLATE.format(user_prompt=topic)
 
             # Initialize the generative model
             model = genai.GenerativeModel('gemini-2.0-flash')
